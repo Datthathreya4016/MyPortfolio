@@ -197,6 +197,11 @@ section {
   transition: transform 0.3s ease;
 }
 
+.project-row.reverse .project-img {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .project-img img:hover {
   transform: scale(1.05);
 }
