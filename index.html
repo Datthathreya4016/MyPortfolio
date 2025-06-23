@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Datthathreya | Java Developer</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <nav id="navbar">
+    <a href="#home" class="logo">
+      <img src="assets/Logo.png" alt="Java Logo" class="logo-img">
+      <span class="logo-text">Datthathreya</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><button id="toggle-dark" aria-label="Toggle Dark Mode">🌙</button></li>
+    </ul>
+  </nav>
+
+  <header id="home">
+    <div id="particles-js"></div>
+    <div class="header-content">
+      <h1>Hello, I'm <span id="typed"></span></h1>
+      <p>Java Developer | MCA Graduate | Problem Solver</p>
+      <a href="#projects" class="btn">View My Work</a>
+      <a href="Panduri_Datthathreya_Resume.pdf" class="btn" download>Download Resume</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" data-aos="fade-up">
+      <h2>About Me</h2>
+      <p>
+        Aspiring Java Developer with experience in building real-world applications.
+        I love problem-solving and creating clean, efficient code. Currently pursuing MCA at Aditya Engineering College.
+      </p>
+    </section>
+
+    <section id="skills" data-aos="fade-right">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>Java</li>
+        <li>HTML & CSS</li>
+        <li>JavaScript</li>
+        <li>MySQL</li>
+        <li>DBMS</li>
+        <li>Data Structures</li>
+        <li>Java Collections</li>
+      </ul>
+    </section>
+
+    <section id="projects" data-aos="fade-up">
+      <h2>Projects</h2>
+      <div class="project-row">
+        <div class="project-img" data-aos="fade-right">
+          <img src="assets/DD.png" alt="Drowsiness Detection">
+        </div>
+        <div class="project-text" data-aos="fade-left">
+          <h3>Driver Drowsiness Monitoring</h3>
+          <p>Real-time detection using OpenCV & MediaPipe. Tracks eye aspect ratio (EAR) and nose movement for enhanced safety.</p>
+        </div>
+      </div>
+      <div class="project-row reverse">
+        <div class="project-img" data-aos="fade-left">
+          <img src="assets/ATM.png" alt="ATM Simulation">
+        </div>
+        <div class="project-text" data-aos="fade-right">
+          <h3>ATM Simulation System</h3>
+          <p>Console-based Java ATM simulation with secure login, transaction handling, and history tracking.</p>
+        </div>
+      </div>
+      <div class="project-row">
+        <div class="project-img" data-aos="fade-right">
+          <img src="assets/BB.png" alt="Bluetooth Notice Board">
+        </div>
+        <div class="project-text" data-aos="fade-left">
+          <h3>Bluetooth-Based Notice Board</h3>
+          <p>Arduino Uno-based LED board controlled by mobile via Bluetooth. HC-05 and LCD integration for message display.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" data-aos="fade-up">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:dattud781@gmail.com">dattud781@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/datthathreya-panduri-4bbb60288/" target="_blank">Visit Profile</a></p>
+      <p>GitHub: <a href="https://github.com/Datthathreya4016" target="_blank">Datthathreya4016</a></p>
+    </section>
+  </main>
+
+  <footer id="contact" data-aos="fade-up">
+    <form id="contactForm" class="contact-form" action="https://formspree.io/f/your-id" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+
+    <div class="footer-info">
+      <p>&copy; 2025 Datthathreya Panduri. All rights reserved.</p>
+      <p>Built with ❤️ using HTML, CSS, and JavaScript</p>
+      <div class="footer-contact">
+        <a href="mailto:dattud781@gmail.com">📧 Email</a> |
+        <a href="https://github.com/Datthathreya4016" target="_blank">💻 GitHub</a> |
+        <a href="https://www.linkedin.com/in/datthathreya-panduri-4bbb60288/" target="_blank">🔗 LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    var typed = new Typed("#typed", {
+      strings: ["Datthathreya", "Java Developer", "Web Developer", "MCA Graduate"],
+      typeSpeed: 60,
+      backSpeed: 30,
+      loop: true
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS.load('particles-js', 'particles.json', function() {
+      console.log('Particles loaded!');
+    });
+  </script>
+</body>
+</html>
